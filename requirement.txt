@@ -1,0 +1,10 @@
+tensorflow
+opencv-python
+pandas
+matplotlib
+split-folders
+tensorflowjs
+scipy
+jupyter
+ipykernel
+notebook

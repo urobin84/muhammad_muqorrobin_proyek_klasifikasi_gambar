@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Data
+data_split/
+dataset/
+raw_data/
+tracklets/
+
+# Models & Outputs
+*.h5
+*.keras
+*.tflite
+output_saved_model/
+output_tfjs/
+submission/
+*.zip
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# System
+__MACOSX/
+
+# Visualization
+*.png
+*.jpg
+*.jpeg
