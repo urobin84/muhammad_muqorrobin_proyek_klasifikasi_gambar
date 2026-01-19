@@ -7,6 +7,7 @@ __pycache__/
 venv/
 .venv/
 ENV/
+anaconda_projects/
 
 # Data
 data_split/
@@ -25,6 +26,8 @@ submission/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
+project_filebrowser/
+jupyter_*.json
 
 # IDEs
 .vscode/
@@ -38,3 +41,7 @@ __MACOSX/
 *.png
 *.jpg
 *.jpeg
+
+# Large model files
+saved_model/
+

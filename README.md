@@ -23,22 +23,29 @@ Proyek ini adalah submission untuk kelas "Belajar Pengembangan Machine Learning"
 5.  **Conversion**: Model terbaik dikonversi ke format mobile dan web (TFLite/TFJS).
 
 ## 📊 Results
-- **Training Accuracy**: > 90%
-- **Validation Accuracy**: ~93.75% (Memenuhi kriteria submission > 85%)
-- **Loss**: Menunjukkan konvergensi yang stabil tanpa tanda-tanda overfitting yang signifikan.
+- **Training Accuracy**: ~94.20% (Epoch 10)
+- **Validation Accuracy**: **93.47%** (Melebihi target 85%)
+- **Loss**: Menunjukkan konvergensi yang stabil dengan nilai validation loss **0.1588**.
+
+![Training History](training_history.png)
+*(Grafik Akurasi dan Loss selama proses training)*
 
 ![Inference Result](inference_result.png)
 *(Contoh hasil prediksi model pada data test)*
 
-## 📂 Struktur Folder Submission
+## 📂 Struktur Folder Proyek
 ```
-submission/
-├───tfjs_model/        # Model format TensorFlow.js
-├───tflite/            # Model format TFLite & label.txt
-├───saved_model/       # Model format SavedModel (PB)
-├───notebook.ipynb     # File notebook proyek
-├───README.md          # Dokumentasi proyek
-└───requirements.txt   # File dependensi
+.
+├───tfjs_model/          # Model format TensorFlow.js
+├───tflite/              # Model format TFLite & label.txt
+├───saved_model/         # Model format SavedModel (PB) & .h5
+├───data_split/          # Dataset yang sudah dibagi (Train, Val, Test)
+├───notebook.ipynb       # File notebook utama (Pipeline Lengkap)
+├───README.md            # Dokumentasi proyek
+├───requirements.txt     # File dependensi
+├───crop_kitti.py        # Script ekstraksi dan cropping dataset KITTI
+├───inference_result.png # Visualisasi hasil prediksi
+└───training_history.png # Visualisasi grafik akurasi dan loss
 ```
 
 ## � License
