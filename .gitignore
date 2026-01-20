@@ -9,19 +9,15 @@ venv/
 ENV/
 anaconda_projects/
 
-# Data
+# Data (keep large datasets out of git)
 data_split/
 dataset/
 raw_data/
 tracklets/
 
-# Models & Outputs
-*.h5
-*.keras
-*.tflite
+# Temporary outputs (not final submission files)
 output_saved_model/
 output_tfjs/
-submission/
 *.zip
 
 # Jupyter Notebooks
@@ -37,11 +33,9 @@ jupyter_*.json
 # System
 __MACOSX/
 
-# Visualization
-*.png
-*.jpg
-*.jpeg
-
-# Large model files
+# Note: Large model files are ignored to satisfy GitHub's 100MB limit
 saved_model/
-
+tfjs_model/
+# model.tflite is kept if it's < 100MB
+submission
+submission.zip
