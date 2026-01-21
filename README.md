@@ -5,10 +5,12 @@ Proyek ini adalah submission untuk kelas "Belajar Pengembangan Machine Learning"
 ## 🎯 Fitur & Kriteria Utama
 
 ### ✅ Dataset Management (Kriteria 3)
-- [x] **Dataset Splitting**: Train (8,934), Validation (1,115), Test (1,120)
-- [x] **Total Images**: 11,169 images (melebihi requirement 10,000+)
+- [x] **Manual Dataset Splitting**: Dataset dibagi secara manual menggunakan kode Python (bukan `split-folders`), memastikan kontrol penuh atas distribusi data.
+- [x] **Dataset Ratio**: Train (80%), Validation (10%), Test (10%).
+- [x] **Test Set Specification**: 30 gambar per-kelas diambil secara spesifik untuk `test` set (Total 120 images) untuk evaluasi yang konsisten.
+- [x] **Total Images**: 11,169 images
 - [x] **Classes**: 4 classes (car, cyclist, pedestrian, van)
-- [x] **Test Set Usage**: Test set dimuat dan digunakan secara eksplisit dengan `test_generator`
+- [x] **Test Set Usage**: Test set dimuat dari folder `data_split/test` dan dievaluasi menggunakan `model.evaluate()` serta visualisasi batch.
 
 ### ✅ Model Development (Kriteria 4, 5, 6)
 - [x] **Architecture**: Sequential CNN dengan Conv2D, MaxPooling2D, Dropout, Dense layers
